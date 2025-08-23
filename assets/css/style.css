@@ -33,7 +33,7 @@ h2{margin:2rem 0 0.5rem}
 ul.clean{padding-left:1.1rem}
 .tag{display:inline-block;padding:.2rem .55rem;border:1px solid var(--border);border-radius:999px;font-size:.85rem;color:var(--muted);}
 .badgebar{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1rem}
-.figure{width:160px;height:160px;border-radius:14px;background:#ddd;overflow:hidden;border:1px solid var(--border)}
+.figure{width:260px;height:260px;border-radius:14px;background:#ddd;overflow:hidden;border:1px solid var(--border)}
 .figure img{width:100%;height:100%;object-fit:cover}
 .kicker{font-size:.9rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
 .meta{color:var(--muted);font-size:.95rem}
