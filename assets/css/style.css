@@ -96,16 +96,19 @@ blockquote{border-left:3px solid var(--border);margin:1rem 0;padding:.5rem 1rem;
 
 /* ===== Ajustes SOLO para móvil ===== */
 @media (max-width:640px){
-  /* Navbar: que el nombre no se parta en 3 líneas */
-  .brand a{ white-space:nowrap; }
+  .nav .inner{
+    flex-direction:column;   /* 🔹 en columna en lugar de fila */
+    align-items:flex-start;  /* alinear a la izquierda */
+    height:auto;             /* altura automática */
+    padding:0.5rem 0;        /* menos padding vertical */
+  }
   .brand{
-    font-size:1.1rem;      /* reduce tamaño en móvil */
-    line-height:1.1;
+    font-size:1.2rem;
+    margin-bottom:0.4rem;    /* espacio entre nombre y menú */
   }
   .menu{
-    gap:.75rem;
-    font-size:.95rem;
-    flex-wrap:wrap;        /* que los links puedan saltar a 2 líneas limpias */
+    gap:0.75rem;
+    font-size:0.95rem;
   }
 
   /* Layout del hero en una sola columna y menos aire */
