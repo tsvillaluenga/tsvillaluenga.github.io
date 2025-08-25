@@ -93,3 +93,44 @@ ul.clean{padding-left:1.1rem}
 table{width:100%;border-collapse:collapse}
 td,th{border-bottom:1px solid var(--border);padding:.6rem .4rem;text-align:left}
 blockquote{border-left:3px solid var(--border);margin:1rem 0;padding:.5rem 1rem;color:var(--muted)}
+
+/* ===== Ajustes SOLO para móvil ===== */
+@media (max-width:640px){
+  /* Navbar: que el nombre no se parta en 3 líneas */
+  .brand a{ white-space:nowrap; }
+  .brand{
+    font-size:1.1rem;      /* reduce tamaño en móvil */
+    line-height:1.1;
+  }
+  .menu{
+    gap:.75rem;
+    font-size:.95rem;
+    flex-wrap:wrap;        /* que los links puedan saltar a 2 líneas limpias */
+  }
+
+  /* Layout del hero en una sola columna y menos aire */
+  .hero{
+    grid-template-columns:1fr;
+    gap:1rem;
+    padding:1rem 0;
+  }
+
+  /* Imagen: limitar tamaño y alinearla bien */
+  .figure{
+    width:100%;
+    max-width:420px;       /* límite superior si el móvil es ancho */
+    margin:0 auto .75rem;  /* centrada y separada del texto */
+    aspect-ratio:1/1;      /* cuadrada sin alturas fijas gigantes */
+    height:auto;           /* importante para que no crezca en exceso */
+  }
+  .figure img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  /* Título y textos más razonables en móvil */
+  .hero h1{ font-size:2rem; margin-top:.25rem; }
+  .hero p.lead{ font-size:1rem; }
+  .btn{ padding:.55rem .9rem; }
+}
