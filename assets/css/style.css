@@ -32,7 +32,7 @@ a:hover{text-decoration:underline}
 .brand{
   font-weight:700;
   letter-spacing:.3px;
-  font-size:2rem;    /* ← aumenta el tamaño (1.5rem ≈ 24px) */
+  font-size:1.3rem;    /* ← aumenta el tamaño (1.5rem ≈ 24px) */
   color:#1e40af;       /* ← opcional: color azul corporativo */
 }
 .menu{display:flex;gap:1rem;flex-wrap:wrap}
