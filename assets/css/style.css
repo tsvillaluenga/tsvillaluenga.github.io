@@ -50,6 +50,8 @@ a:hover{text-decoration:underline}
 
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem}
 .card.figure{padding:0;} /* sin marco gordo para la imagen */
+/* las imágenes decorativas nunca deben desbordar su tarjeta */
+.card img{max-width:100%;object-fit:contain}
 
 .btn{display:inline-block;border:1px solid var(--border);background:#111;color:#fff;padding:.6rem 1rem;border-radius:10px}
 .btn.secondary{background:#fff;color:var(--fg)}
@@ -92,6 +94,44 @@ ul.clean{padding-left:1.1rem}
 .figure img{
   width:100%;height:100%;object-fit:cover;display:block;
 }
+
+/* ===== EXPERIENCE TIMELINE ===== */
+.timeline{margin:1rem 0 0}
+.role{
+  position:relative;
+  border-left:2px solid var(--border);
+  padding:0 0 1.75rem 1.5rem;
+  margin-left:.35rem;
+}
+.role:last-child{border-left-color:transparent;padding-bottom:.5rem}
+.role::before{
+  content:"";
+  position:absolute;left:-7px;top:.5rem;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--accent);border:2px solid var(--bg);
+}
+.role.current::before{background:#16a34a}
+.role-head{
+  display:flex;flex-wrap:wrap;gap:.15rem 1rem;
+  align-items:baseline;justify-content:space-between;
+}
+.role-head h3{margin:0;font-size:1.15rem}
+.role-dates{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.role-org{font-weight:600;margin:.1rem 0 .4rem}
+.role ul{margin:.4rem 0 0;padding-left:1.1rem}
+.role li{margin-bottom:.3rem}
+
+/* ===== STATUS PILL ===== */
+.pill{
+  display:inline-block;padding:.15rem .55rem;border-radius:999px;
+  font-size:.75rem;font-weight:600;white-space:nowrap;
+  background:#dcfce7;color:#166534;border:1px solid #bbf7d0;
+}
+.card-head{
+  display:flex;flex-wrap:wrap;gap:.4rem 1rem;
+  align-items:center;justify-content:space-between;margin-bottom:.25rem;
+}
+.card-head h3{margin:0;font-size:1.05rem}
 
 .kicker{font-size:.9rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
 .meta{color:var(--muted);font-size:.95rem}

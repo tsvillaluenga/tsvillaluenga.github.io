@@ -1,19 +1,30 @@
-
 # Personal Site — Tomás Sánchez Villaluenga
 
-Professional, single‑author website for GitHub Pages (pure HTML/CSS).
+Professional portfolio for GitHub Pages (pure HTML/CSS, no build step).
 
-## Deploy
-1. Create a repo named `yourusername.github.io` on GitHub.
-2. Upload the contents of this folder to the repo root.
-3. In **Settings → Pages**, ensure source is the default branch.
-4. (Optional) Replace `assets/img/profile.jpg` with a square headshot.
-5. Update links to your GitHub profile and any missing URLs.
+Live at **https://tsvillaluenga.github.io/**
 
-## Edit
-- `index.html` — About/Home
+## Pages
+- `index.html` — About / home
+- `experience.html` — Professional experience & production AI systems
 - `publications.html` — Patent & papers
 - `projects.html` — Selected projects
-- `cv.html` — Link to `/docs/Tomas_Sanchez_Villaluenga_CV.pdf`
+- `cv.html` — Education, technical skills and CV download
 - `contact.html` — Contact info
-- `assets/css/style.css` — Theme
+- `404.html` — Not found
+
+## Assets
+- `assets/css/style.css` — Single stylesheet (design tokens in `:root`)
+- `assets/img/` — Profile photo
+- `docs/` — CV PDF, project reports and images
+
+## Editing
+No toolchain required — edit the HTML directly and push to `main`; GitHub Pages
+serves the repository root. `.nojekyll` disables Jekyll processing.
+
+The navigation menu is duplicated in each page's `<nav>` block; update all pages
+when adding or renaming a section.
+
+## Updating the CV
+Replace `docs/Tomas_Sanchez_Villaluenga_CV.pdf` and update the
+"Last updated" line in `cv.html`.
