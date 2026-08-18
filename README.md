@@ -19,10 +19,10 @@ Live at **https://tsvillaluenga.github.io/**
 `assets/css/style.css` holds everything. Edit the tokens in the `:root` block
 rather than hard-coding values.
 
-- **Theme** — dark by default, light via `prefers-color-scheme` or the header
-  toggle, which persists to `localStorage` under `theme`. The light palette is
-  written twice (media query + `[data-theme="light"]`) because media queries
-  cannot appear in selectors; keep the two blocks in sync.
+- **Theme** — light by default for everyone; the site deliberately ignores
+  `prefers-color-scheme`. Dark is opt-in through the header toggle and persists
+  to `localStorage` under `theme`, applied as `data-theme="dark"` on `<html>`.
+  Each palette is therefore declared exactly once.
 - **Type** — Space Grotesk (display), Inter (body), JetBrains Mono (data and
   labels), loaded from Google Fonts. Sizes use a fluid `--step-*` scale.
 - **Motion** — `.reveal` elements fade in on scroll. Gated behind the `js` class

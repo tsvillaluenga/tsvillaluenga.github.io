@@ -11,11 +11,9 @@
   var meta = document.querySelector('meta[name="theme-color"]');
   var BG = { dark: "#0A0E14", light: "#FBFAF8" };
 
-  function systemTheme() {
-    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-  }
+  // light is the default; dark only when explicitly chosen
   function activeTheme() {
-    return root.getAttribute("data-theme") || systemTheme();
+    return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
   }
   function sync() {
     var t = activeTheme();
@@ -35,11 +33,6 @@
       sync();
     });
   }
-
-  var mqLight = window.matchMedia("(prefers-color-scheme: light)");
-  var onSchemeChange = function () { if (!root.getAttribute("data-theme")) sync(); };
-  if (mqLight.addEventListener) mqLight.addEventListener("change", onSchemeChange);
-  else if (mqLight.addListener) mqLight.addListener(onSchemeChange);
 
   sync();
 

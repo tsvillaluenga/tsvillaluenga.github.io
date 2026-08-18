@@ -1,12 +1,13 @@
 /* ============================================================
    Tomás Sánchez Villaluenga — portfolio design system
-   Visual language: instrument panel. Deep ink canvas, amber
-   signal accent, hairline rules, monospace data readouts.
+   Visual language: instrument panel. Paper canvas, amber signal
+   accent, hairline rules, monospace data readouts. Dark theme is
+   opt-in through the header toggle.
    ============================================================ */
 
 /* ---------- 1. TOKENS ---------- */
 :root{
-  color-scheme: dark;
+  color-scheme: light;
 
   --font-display:"Space Grotesk",system-ui,sans-serif;
   --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -36,7 +37,30 @@
   --ease:cubic-bezier(.22,.61,.36,1);
   --dur:.32s;
 
-  /* dark palette (default) */
+  /* light palette — the default */
+  --bg:#FBFAF8;
+  --bg-elev:#FFFFFF;
+  --surface:#FFFFFF;
+  --surface-2:#F4F2EE;
+  --line:rgba(17,24,39,.12);
+  --line-strong:rgba(17,24,39,.24);
+  --text:#111827;
+  --text-dim:#37415A;
+  --muted:#576073;
+  --accent:#995200;
+  --accent-ink:#FFFFFF;
+  --accent-soft:rgba(153,82,0,.10);
+  --good:#0A6640;
+  --good-soft:rgba(10,102,64,.10);
+  --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(153,82,0,.05),transparent 62%);
+  --grid-line:rgba(17,24,39,.035);
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 12px 28px -14px rgba(16,24,40,.16);
+}
+
+/* dark palette — opt in through the header toggle. The site does not
+   follow prefers-color-scheme: light is the default for everyone. */
+:root[data-theme="dark"]{
+  color-scheme: dark;
   --bg:#0A0E14;
   --bg-elev:#0E141D;
   --surface:#121A25;
@@ -54,51 +78,6 @@
   --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(255,176,32,.035),transparent 62%);
   --grid-line:rgba(255,255,255,.026);
   --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
-}
-
-/* light palette — duplicated for system preference and explicit
-   toggle because media queries cannot appear in selectors. Keep in sync. */
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]){
-    color-scheme: light;
-    --bg:#FBFAF8;
-    --bg-elev:#FFFFFF;
-    --surface:#FFFFFF;
-    --surface-2:#F4F2EE;
-    --line:rgba(17,24,39,.12);
-    --line-strong:rgba(17,24,39,.24);
-    --text:#111827;
-    --text-dim:#37415A;
-    --muted:#5C6679;
-    --accent:#A85A00;
-    --accent-ink:#FFFFFF;
-    --accent-soft:rgba(168,90,0,.10);
-    --good:#0E7A50;
-    --good-soft:rgba(14,122,80,.10);
-    --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(168,90,0,.05),transparent 62%);
-    --grid-line:rgba(17,24,39,.035);
-    --shadow:0 1px 2px rgba(16,24,40,.05),0 12px 28px -14px rgba(16,24,40,.16);
-  }
-}
-:root[data-theme="light"]{
-  color-scheme: light;
-  --bg:#FBFAF8;
-  --bg-elev:#FFFFFF;
-  --surface:#FFFFFF;
-  --surface-2:#F4F2EE;
-  --line:rgba(17,24,39,.12);
-  --line-strong:rgba(17,24,39,.24);
-  --text:#111827;
-  --text-dim:#37415A;
-  --muted:#5C6679;
-  --accent:#A85A00;
-  --accent-ink:#FFFFFF;
-  --accent-soft:rgba(168,90,0,.10);
-  --good:#0E7A50;
-  --good-soft:rgba(14,122,80,.10);
-  --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(168,90,0,.05),transparent 62%);
-  --grid-line:rgba(17,24,39,.035);
-  --shadow:0 1px 2px rgba(16,24,40,.05),0 12px 28px -14px rgba(16,24,40,.16);
 }
 
 /* ---------- 2. RESET ---------- */
@@ -201,14 +180,10 @@ em{font-style:italic}
   transition:color var(--dur) var(--ease),border-color var(--dur) var(--ease),background-color var(--dur) var(--ease);
 }
 .theme-btn:hover{color:var(--accent);border-color:var(--line-strong);background:var(--surface-2)}
-.theme-btn .i-sun{display:none}
-.theme-btn .i-moon{display:block}
-:root[data-theme="light"] .theme-btn .i-sun{display:block}
-:root[data-theme="light"] .theme-btn .i-moon{display:none}
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]) .theme-btn .i-sun{display:block}
-  :root:not([data-theme="dark"]) .theme-btn .i-moon{display:none}
-}
+.theme-btn .i-sun{display:block}
+.theme-btn .i-moon{display:none}
+:root[data-theme="dark"] .theme-btn .i-sun{display:none}
+:root[data-theme="dark"] .theme-btn .i-moon{display:block}
 @media (max-width:680px){
   .nav-inner{flex-wrap:wrap;padding-block:.6rem;min-height:0}
   .nav-links{width:100%;margin-left:0;justify-content:flex-start;gap:.1rem}
