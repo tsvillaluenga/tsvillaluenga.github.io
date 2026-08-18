@@ -51,9 +51,8 @@
   --accent-soft:rgba(255,176,32,.13);
   --good:#3DD68C;
   --good-soft:rgba(61,214,140,.14);
-  --glow:radial-gradient(60rem 32rem at 8% -12%,rgba(255,176,32,.10),transparent 60%),
-         radial-gradient(48rem 28rem at 92% 4%,rgba(77,163,255,.08),transparent 62%);
-  --grid-line:rgba(255,255,255,.030);
+  --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(255,176,32,.035),transparent 62%);
+  --grid-line:rgba(255,255,255,.026);
   --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
 }
 
@@ -76,8 +75,7 @@
     --accent-soft:rgba(168,90,0,.10);
     --good:#0E7A50;
     --good-soft:rgba(14,122,80,.10);
-    --glow:radial-gradient(60rem 32rem at 8% -12%,rgba(168,90,0,.07),transparent 60%),
-           radial-gradient(48rem 28rem at 92% 4%,rgba(0,90,200,.05),transparent 62%);
+    --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(168,90,0,.05),transparent 62%);
     --grid-line:rgba(17,24,39,.035);
     --shadow:0 1px 2px rgba(16,24,40,.05),0 12px 28px -14px rgba(16,24,40,.16);
   }
@@ -98,8 +96,7 @@
   --accent-soft:rgba(168,90,0,.10);
   --good:#0E7A50;
   --good-soft:rgba(14,122,80,.10);
-  --glow:radial-gradient(60rem 32rem at 8% -12%,rgba(168,90,0,.07),transparent 60%),
-         radial-gradient(48rem 28rem at 92% 4%,rgba(0,90,200,.05),transparent 62%);
+  --glow:radial-gradient(52rem 26rem at 12% -18%,rgba(168,90,0,.05),transparent 62%);
   --grid-line:rgba(17,24,39,.035);
   --shadow:0 1px 2px rgba(16,24,40,.05),0 12px 28px -14px rgba(16,24,40,.16);
 }
@@ -133,7 +130,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* ---------- 3. LAYOUT ---------- */
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.15rem,4vw,2.5rem)}
 .prose{max-width:var(--maxw-prose)}
-.section{padding-block:var(--sp-9)}
+.section{padding-block:var(--sp-8)}
 .section-tight{padding-block:var(--sp-7)}
 .stack-4>*+*{margin-top:var(--sp-4)}
 .stack-5>*+*{margin-top:var(--sp-5)}
@@ -153,8 +150,8 @@ h1,h2,h3,h4{
   letter-spacing:-.02em;
   text-wrap:balance;
 }
-h1{font-size:var(--step-5)}
-h2{font-size:var(--step-3)}
+h1{font-size:var(--step-4);letter-spacing:-.025em}
+h2{font-size:var(--step-2)}
 h3{font-size:var(--step-1)}
 p{text-wrap:pretty}
 strong{color:var(--text);font-weight:600}
@@ -168,9 +165,9 @@ em{font-style:italic}
 .eyebrow{
   display:flex;align-items:center;gap:var(--sp-3);
   font-family:var(--font-mono);font-size:var(--step--2);
-  letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
 }
-.eyebrow::before{content:"";width:2rem;height:1px;background:var(--accent);flex:none}
+.eyebrow::before{content:"";width:1.5rem;height:1px;background:var(--line-strong);flex:none}
 
 /* ---------- 5. NAV ---------- */
 .nav{
@@ -219,7 +216,7 @@ em{font-style:italic}
 }
 
 /* ---------- 6. HERO ---------- */
-.hero{position:relative;padding-block:var(--sp-8);overflow:hidden;isolation:isolate}
+.hero{position:relative;padding-block:var(--sp-7) var(--sp-6);overflow:hidden;isolation:isolate}
 .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--glow)}
 .hero::after{
   content:"";position:absolute;inset:0;z-index:-1;
@@ -291,8 +288,8 @@ em{font-style:italic}
 /* ---------- 7. SECTION HEADER ---------- */
 .sec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--sp-4);margin-bottom:var(--sp-6)}
 .sec-index{
-  font-family:var(--font-mono);font-size:var(--step--2);color:var(--accent);
-  letter-spacing:.1em;flex:none;padding-top:.4rem;
+  font-family:var(--font-mono);font-size:var(--step--2);color:var(--muted);
+  letter-spacing:.1em;flex:none;padding-top:.35rem;
 }
 /* must be shrinkable: long headings would otherwise push the rule off-screen */
 .sec-head h2{flex:0 1 auto;min-width:0;max-width:min(100%,36rem)}
@@ -321,7 +318,7 @@ a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
   font-family:var(--font-mono);font-size:var(--step--2);color:var(--muted);
   letter-spacing:.04em;margin-bottom:var(--sp-3);
 }
-.card-num{font-family:var(--font-mono);font-size:var(--step--2);color:var(--accent);display:block;margin-bottom:var(--sp-3)}
+.card-num{font-family:var(--font-mono);font-size:var(--step--2);color:var(--muted);display:block;margin-bottom:var(--sp-3)}
 .card-head{display:flex;flex-wrap:wrap;gap:.5rem var(--sp-4);align-items:flex-start;justify-content:space-between;margin-bottom:var(--sp-3)}
 .card-head h3{margin-bottom:0;min-width:0}
 .card ul{display:grid;gap:.5rem;margin-top:var(--sp-3)}
@@ -335,8 +332,8 @@ a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
 }
 .metric:hover{border-color:var(--accent);transform:translateY(-2px)}
 .metric-value{
-  font-family:var(--font-display);font-size:var(--step-4);font-weight:600;line-height:1;
-  letter-spacing:-.035em;color:var(--accent);font-variant-numeric:tabular-nums;
+  font-family:var(--font-mono);font-size:var(--step-2);font-weight:500;line-height:1.1;
+  letter-spacing:-.02em;color:var(--text);font-variant-numeric:tabular-nums;
 }
 .metric-label{margin-top:var(--sp-3);font-size:var(--step--1);color:var(--text);font-weight:500}
 .metric-note{margin-top:.35rem;font-family:var(--font-mono);font-size:var(--step--2);color:var(--muted)}
@@ -352,6 +349,26 @@ a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
 }
 .facts dd{color:var(--text-dim);min-width:0;overflow-wrap:break-word}
 @media (max-width:560px){.facts>div{grid-template-columns:1fr;gap:.15rem}}
+
+/* results table: plain figures, no dashboard tiles */
+.results{border-top:1px solid var(--line)}
+.results>div{
+  display:grid;grid-template-columns:minmax(5.5rem,7rem) 1fr;gap:var(--sp-4);
+  padding:var(--sp-3) 0;border-bottom:1px solid var(--line);align-items:baseline;
+}
+.results dt{
+  font-family:var(--font-mono);font-size:var(--step-0);color:var(--accent);
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+}
+.results dd{
+  display:flex;flex-wrap:wrap;gap:.15rem var(--sp-4);justify-content:space-between;
+  color:var(--text-dim);min-width:0;font-size:var(--step--1);
+}
+.results .src{font-family:var(--font-mono);font-size:var(--step--2);color:var(--muted)}
+@media (max-width:640px){
+  .results>div{grid-template-columns:1fr;gap:.1rem}
+  .results dd{justify-content:flex-start}
+}
 
 /* ---------- 9. TIMELINE ---------- */
 .role{position:relative;padding:0 0 var(--sp-7) clamp(1.4rem,4vw,2.25rem);border-left:1px solid var(--line)}
@@ -389,7 +406,7 @@ a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
 .stack-group{padding:var(--sp-5) 0;border-top:1px solid var(--line)}
 .stack-group h3{
   font-family:var(--font-mono);font-size:var(--step--2);font-weight:500;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--sp-3);
+  letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--sp-3);
 }
 
 .pill{
