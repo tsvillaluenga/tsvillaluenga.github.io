@@ -3,33 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tomás Sánchez Villaluenga · AI, Agentic Systems & Robotics</title>
-<meta name="description" content="Robotics Software Engineer at Moffett Automation. Production AI and agentic systems, computer vision, event-based vision and safety-critical embedded software. Patent holder and published author.">
+<title>Tomás Sánchez Villaluenga · Applied AI, Agentic Systems & Robotics</title>
+<meta name="description" content="Robotics Software Engineer at Moffett Automation. Agentic AI and LLM engineering, RAG and LLMOps, computer vision, ROS2 robotics and DAL-A safety-critical software. Patent holder, published author, MSc Robotics & Automation, Oxford A+.">
+<meta name="author" content="Tomás Sánchez Villaluenga">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/css/style.css">
-<meta property="og:title" content="Tomás Sánchez Villaluenga · AI, Agentic Systems & Robotics">
-<meta property="og:description" content="Robotics Software Engineer at Moffett Automation. Production AI and agentic systems, computer vision and safety-critical embedded software.">
+<meta name="theme-color" content="#0A0E14">
+<link rel="canonical" href="https://tsvillaluenga.github.io/">
+<meta property="og:site_name" content="Tomás Sánchez Villaluenga">
+<meta property="og:title" content="Tomás Sánchez Villaluenga · Applied AI, Agentic Systems & Robotics">
+<meta property="og:description" content="Robotics Software Engineer at Moffett Automation. Agentic AI, computer vision and robotics shipped to production. Patent holder and published author.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://tsvillaluenga.github.io/">
-<meta property="og:image" content="https://tsvillaluenga.github.io/assets/img/yo.jpg">
+<meta property="og:image" content="https://tsvillaluenga.github.io/assets/img/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tomás Sánchez Villaluenga — AI, Agentic Systems and Robotics">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var d=document.documentElement;d.classList.add("js");try{var t=localStorage.getItem("theme");if(t)d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Tom\u00e1s S\u00e1nchez Villaluenga",
+  "name": "Tomás Sánchez Villaluenga",
   "url": "https://tsvillaluenga.github.io/",
+  "image": "https://tsvillaluenga.github.io/assets/img/profile.jpg",
   "email": "mailto:tsvillaluenga@gmail.com",
-  "jobTitle": "AI & Robotics Engineer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Moffett Automation"
-  },
+  "telephone": "+34653350815",
+  "jobTitle": "Robotics Software Engineer",
+  "description": "Applied AI, agentic systems and robotics engineer. Production AI systems, computer vision, ROS2 and DAL-A safety-critical software.",
+  "worksFor": { "@type": "Organization", "name": "Moffett Automation" },
+  "address": { "@type": "PostalAddress", "addressCountry": "ES", "addressLocality": "Madrid" },
   "alumniOf": [
     { "@type": "CollegeOrUniversity", "name": "Universidad Politécnica de Madrid" },
     { "@type": "CollegeOrUniversity", "name": "University of Oxford" },
     { "@type": "CollegeOrUniversity", "name": "Technische Universität Dortmund" }
   ],
-  "knowsLanguage": ["Spanish", "English", "German"],
+  "knowsAbout": ["Agentic AI","LLM Engineering","Retrieval-Augmented Generation","LLMOps","Computer Vision","Event-Based Vision","Machine Learning","Deep Learning","Robotics","ROS2","SLAM","UAV Autonomy","Safety-Critical Software","DAL-A","Embedded Systems"],
+  "knowsLanguage": ["Spanish","English","German"],
   "sameAs": [
     "https://www.linkedin.com/in/tomas-sanchez-villaluenga-9b2b33232/",
     "https://github.com/tsvillaluenga"
@@ -38,104 +52,492 @@
 </script>
 </head>
 <body>
-<nav class="nav"><div class="container inner">
-  <div class="brand"><a href="/">Tomás Sánchez Villaluenga</a></div>
-  <div class="menu">
-    <a href="/">About</a>
-    <a href="/experience.html">Experience</a>
-    <a href="/publications.html">Publications</a>
-    <a href="/projects.html">Projects</a>
-    <a href="/cv.html">CV</a>
-    <a href="/contact.html">Contact</a>
-  </div>
-</div></nav>
-<div class="container">
+<a class="skip" href="#main">Skip to content</a>
 
+<header class="nav">
+  <nav class="wrap nav-inner" aria-label="Main navigation">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">TSV</span>
+      <span translate="no">Tomás Sánchez Villaluenga</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" aria-current="page">About</a>
+      <a href="/experience.html">Experience</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/publications.html">Research</a>
+      <a href="/cv.html">CV</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <button class="theme-btn" type="button" id="theme-toggle" aria-label="Switch to light theme" title="Switch to light theme">
+      <svg class="i-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="i-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="card figure">
-    <!-- Replace with assets/img/profile.jpg -->
-    <img src="/assets/img/yo.jpg" alt="Headshot of Tomás" onerror="this.style.display='none'">
-  </div>
-  <div>
-    <span class="kicker">About me</span>
-    <h1>AI, Agentic Systems & Robotics</h1>
-    <p class="lead"><strong>Robotics Software Engineer at Moffett Automation.</strong><br>
-Previously Airbus Defence and Space (DAL-A safety-critical software), Dronomy (UAV autonomy) and Santillana · Sanoma Group (AI &amp; automation consulting). MSc Robotics &amp; Automation (UPM · TU Dortmund). Patent holder and published author.</p>
-    <div class="badgebar">
-      <span class="tag">Agentic AI & LLM Engineering</span>
-      <span class="tag">RAG & LLMOps</span>
-      <span class="tag">Computer Vision</span>
-      <span class="tag">Robotics & Autonomous Systems</span>
-      <span class="tag">Machine Learning</span>
-      <span class="tag">Deep Learning</span>
-      <span class="tag">Event-based Vision</span>
-      <span class="tag">Embedded & Safety-Critical Systems</span>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Robotics Software Engineer · Moffett Automation</p>
+      <h1>Applied AI and robotics, <span class="accent-word">shipped to production</span>.</h1>
+      <p class="lead">
+        I build systems where machine learning has to survive contact with the real world:
+        agentic AI in production, machine vision on the factory floor, autonomy on aircraft
+        that must not fail. Previously <strong>DAL-A safety-critical software at Airbus
+        Defence and Space</strong>, UAV autonomy at <strong>Dronomy</strong>, and AI automation
+        for <strong>Santillana · Sanoma Group</strong>.
+      </p>
+      <div class="btns">
+        <a class="btn btn-primary" href="/experience.html">
+          Explore my experience
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="/docs/Tomas_Sanchez_Villaluenga_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        <a class="btn btn-ghost" href="/contact.html">Get in touch</a>
+      </div>
     </div>
-    <div class="about-text">
-<p><br>
-I design and ship intelligent systems that merge <strong>applied AI, robotics and embedded engineering</strong>. Day to day I lead AI-driven process automation and build machine vision pipelines for industrial robotics, and I have taken several <strong>agentic AI systems into production</strong> — from document inspection and orchestration for sales and engineering teams, to multimodal computer vision platforms and workforce management software used in the field.
-</p>
-<p>
-My research background sits in <strong>event-based vision</strong>. My MSc thesis at <strong>TU Dortmund</strong> developed a <strong>self-supervised learning algorithm for 3D prediction of logistic objects using event cameras</strong>, combining NeRF-inspired 3D modelling with efficient dataset creation to reach <strong>+6.3 mAP over the baseline</strong> while reducing annotation storage by <strong>90%</strong>. I later completed advanced training in Deep Unsupervised Learning, Generative AI and Computer Vision at the <strong>University of Oxford</strong>, graded <strong>A+</strong>.
-</p>
-<p>
-I also hold a <strong>patent</strong> derived from my Bachelor's Thesis and have collaborated on <strong>research projects in Spain and Germany</strong>, strengthening both my technical depth and my international perspective. I am always open to conversations around <strong>applied AI research, agentic systems and robotics</strong>.
-    </p>
-</div>
 
-    <p><br>
-      <strong>Languages:</strong> Spanish (native), English (C1), German (A2).
-    </p>
-    <p>
-      <a class="btn" href="/experience.html">View experience</a>
-      <a class="btn secondary" href="/cv.html">View CV</a>
-      <a class="btn secondary" href="/contact.html">Get in touch</a>
+    <div class="portrait">
+      <picture>
+        <source srcset="/assets/img/profile.webp" type="image/webp">
+        <img src="/assets/img/profile.jpg" width="680" height="680"
+             alt="Portrait of Tomás Sánchez Villaluenga" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <dl class="readout">
+      <div>
+        <dt>Review workload cut</dt>
+        <dd>~90%</dd>
+      </div>
+      <div>
+        <dt>Translation cycle</dt>
+        <dd>4&nbsp;mo → 2&nbsp;wk</dd>
+      </div>
+      <div>
+        <dt>Detection gain</dt>
+        <dd>+6.3 mAP</dd>
+      </div>
+      <div>
+        <dt>Certification level</dt>
+        <dd translate="no">DAL-A</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 01 · PROFILE ============ -->
+<section class="section reveal" aria-labelledby="h-profile">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">01</span>
+      <h2 id="h-profile">Profile</h2>
+      <span class="sec-rule"></span>
+      <span class="status"><span class="status-dot" aria-hidden="true"></span>Open to conversations</span>
+    </div>
+
+    <div class="grid g-2">
+      <div class="body-text">
+        <p>
+          My work sits where <strong>applied AI meets engineering constraints</strong>. At Moffett
+          Automation I lead AI-driven process automation and build machine vision pipelines for
+          industrial robotics. Alongside that I have taken three <strong>agentic AI systems into
+          production</strong> — document inspection and orchestration for sales and engineering,
+          a multimodal computer vision platform for real estate, and a workforce management
+          system running in the field.
+        </p>
+        <p>
+          My research background is in <strong>event-based vision</strong>. My MSc thesis at
+          <strong>TU Dortmund</strong> built a self-supervised model for 3D prediction of logistic
+          objects using event cameras, reaching <strong>+6.3 mAP over the baseline</strong> while
+          cutting annotation storage by <strong>90%</strong>.
+        </p>
+        <p>
+          Before AI, I certified software that cannot fail: verification and validation of
+          <strong>DAL-A</strong> production software for the Airbus MRTT. That grounding in
+          traceability and reliability is what I bring to machine learning systems.
+        </p>
+      </div>
+
+      <dl class="facts">
+        <div><dt>Current</dt><dd>Robotics Software Engineer, <strong>Moffett Automation</strong></dd></div>
+        <div><dt>Focus</dt><dd>Agentic AI · LLM engineering · Computer vision · Robotics</dd></div>
+        <div><dt>Education</dt><dd>MSc Robotics &amp; Automation (UPM · TU Dortmund) · BSc Electronics &amp; Automation (UPM) · Advanced AI, University of Oxford — <strong>A+</strong></dd></div>
+        <div><dt>Recognition</dt><dd>1 granted patent · 3 papers · 1 ICCV submission in preparation</dd></div>
+        <div><dt>Languages</dt><dd>Spanish (native) · English (C1) · German (A2)</dd></div>
+        <div><dt>Location</dt><dd>Madrid, Spain — open to relocation</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · IMPACT ============ -->
+<section class="section reveal" aria-labelledby="h-impact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">02</span>
+      <h2 id="h-impact">Measured Impact</h2>
+      <span class="sec-rule"></span>
+      <span class="sec-note">Outcomes, not activity</span>
+    </div>
+
+    <div class="grid g-3">
+      <div class="metric">
+        <p class="metric-value">~90%</p>
+        <p class="metric-label">Document review &amp; update workload removed</p>
+        <p class="metric-note">Moffett Automation</p>
+      </div>
+      <div class="metric">
+        <p class="metric-value">4mo→2wk</p>
+        <p class="metric-label">Translation turnaround, with ~90% cost reduction</p>
+        <p class="metric-note">Santillana · Sanoma Group</p>
+      </div>
+      <div class="metric">
+        <p class="metric-value">98–99%</p>
+        <p class="metric-label">Potential savings vs. historical translation budgets</p>
+        <p class="metric-note">Santillana · Sanoma Group</p>
+      </div>
+      <div class="metric">
+        <p class="metric-value">~95%</p>
+        <p class="metric-label">Curriculum-adaptation cost cut, ~50% faster, brought in-house</p>
+        <p class="metric-note">Santillana · Sanoma Group</p>
+      </div>
+      <div class="metric">
+        <p class="metric-value">+6.3</p>
+        <p class="metric-label">mAP over baseline in object detection</p>
+        <p class="metric-note">MSc thesis · TU Dortmund</p>
+      </div>
+      <div class="metric">
+        <p class="metric-value">90%</p>
+        <p class="metric-label">Annotation storage reduction on the original dataset</p>
+        <p class="metric-note">MSc thesis · TU Dortmund</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · CAPABILITIES ============ -->
+<section class="section reveal" aria-labelledby="h-capabilities">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">03</span>
+      <h2 id="h-capabilities">What I Build</h2>
+      <span class="sec-rule"></span>
+    </div>
+
+    <div class="grid g-2">
+      <div class="card">
+        <span class="card-num" aria-hidden="true">/ 01</span>
+        <h3>Agentic AI &amp; LLM Engineering</h3>
+        <p class="body-text">Multi-agent systems that do real work — orchestration, tool calling,
+          state and memory, human-in-the-loop review, and the guardrails that make them
+          trustworthy enough to deploy.</p>
+        <div class="tags role-tags">
+          <span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">CrewAI</span>
+          <span class="tag">Agent Orchestration</span><span class="tag">Tool Calling</span>
+          <span class="tag">ReAct</span><span class="tag" translate="no">MCP</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="card-num" aria-hidden="true">/ 02</span>
+        <h3>RAG &amp; LLMOps</h3>
+        <p class="body-text">Retrieval systems that stay accurate as corpora grow: chunking and
+          embedding strategy, semantic retrieval, evaluation and observability, plus cost and
+          latency tuning so the economics work at scale.</p>
+        <div class="tags role-tags">
+          <span class="tag">Agentic RAG</span><span class="tag">Vector Databases</span>
+          <span class="tag">Context Engineering</span><span class="tag">LLM Evaluation</span>
+          <span class="tag">Guardrails</span><span class="tag">Cost &amp; Latency</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="card-num" aria-hidden="true">/ 03</span>
+        <h3>Computer Vision &amp; Perception</h3>
+        <p class="body-text">Detection, segmentation and 3D reconstruction pipelines — including
+          event-based cameras and NeRF-style modelling, and the self-supervised tricks that make
+          annotation affordable.</p>
+        <div class="tags role-tags">
+          <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">YOLO</span>
+          <span class="tag">Transformers &amp; ViT</span><span class="tag">NeRF</span>
+          <span class="tag">Event-Based Vision</span><span class="tag">Self-Supervised</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="card-num" aria-hidden="true">/ 04</span>
+        <h3>Robotics &amp; Safety-Critical Systems</h3>
+        <p class="body-text">Autonomy that has to hold up outside the lab: perception and
+          navigation for GNSS-denied UAV flight, collision avoidance, precision landing — and
+          verification discipline learned on certified avionics.</p>
+        <div class="tags role-tags">
+          <span class="tag" translate="no">ROS2</span><span class="tag">SLAM</span><span class="tag">LiDAR</span>
+          <span class="tag">Sensor Fusion</span><span class="tag">Path Planning</span>
+          <span class="tag" translate="no">DAL-A</span><span class="tag">Embedded C/C++</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · CAREER ============ -->
+<section class="section reveal" aria-labelledby="h-career">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">04</span>
+      <h2 id="h-career">Career</h2>
+      <span class="sec-rule"></span>
+      <span class="sec-note">Last 4 roles</span>
+    </div>
+
+    <div class="timeline">
+      <article class="role current">
+        <div class="role-head">
+          <h3>Robotics Software Engineer</h3>
+          <span class="role-dates">Feb 2026 — Present</span>
+        </div>
+        <p class="role-org">Moffett Automation</p>
+        <ul>
+          <li>Lead <strong>AI-driven process automation</strong>, cutting document review and update workload by <strong>~90%</strong> and reducing critical client-facing errors.</li>
+          <li>Build and integrate <strong>machine vision</strong> pipelines and software for core robotics processes.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <h3>AI &amp; Automation Consultant</h3>
+          <span class="role-dates">May 2024 — Jul 2026</span>
+        </div>
+        <p class="role-org">Santillana · Sanoma Group</p>
+        <ul>
+          <li>Cut translation turnaround from <strong>~4 months to ~2 weeks</strong> and costs by <strong>~90%</strong>.</li>
+          <li>Built AI-ready datasets from proprietary editorial content using <strong>RAG</strong>, chunking, LLM-based tagging and knowledge graphs.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <h3>Robotics Engineer</h3>
+          <span class="role-dates">Oct 2025 — Jan 2026</span>
+        </div>
+        <p class="role-org">Dronomy</p>
+        <ul>
+          <li>Perception and autonomy algorithms for UAVs in <strong>GNSS-denied environments</strong>.</li>
+          <li><strong>Collision avoidance</strong> and <strong>precision landing</strong> for safer autonomous navigation.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <h3>Critical Embedded Software Engineer</h3>
+          <span class="role-dates">Feb 2023 — Feb 2024</span>
+        </div>
+        <p class="role-org">Capgemini Engineering · Airbus Defence and Space</p>
+        <ul>
+          <li>Verification and validation of <strong>DAL-A</strong> safety-critical production software for the <strong>Airbus MRTT</strong>.</li>
+        </ul>
+      </article>
+    </div>
+
+    <p style="margin-top:var(--sp-6)">
+      <a class="link-arrow" href="/experience.html">Full experience and production systems <span aria-hidden="true">→</span></a>
     </p>
   </div>
 </section>
 
-<section>
-  <h2>Selected Highlights</h2>
-  <p class="meta">Research and engineering work spanning event-based vision, wearable hardware and safety-critical avionics. For production AI systems and roles, see <a href="/experience.html">Experience</a>.</p>
-  <div class="grid cols-3">
-    <div class="card">
-      <h3><span style="color: rgb(0, 170, 0);">Patent</span> — Wearable Impact Detection System</h3>
-  <p class="meta">Developed a portable device and system for impact detection and monitoring the user’s status, successfully patent-protected at UPM.</p>
-      <p><a href="https://www.upm.es/recursosidi/offers-resources/patentes/dispositivo-portable-y-comunicado-de-deteccion-de-impactos-y-monitorizacion-del-estado-del-usuario-que-lo-porta-y-sistema-que-lo-comprende/" target="_blank" rel="noopener">View patent</a></p>
-<div style="text-align: center;">
-<p class="meta"><img src="/docs/patent1.png" alt="Imagen 1" height="270">
-<img src="/docs/patent2.jpg" alt="Imagen 2" height="270"></p>
+<!-- ============ 05 · PRODUCTION SYSTEMS ============ -->
+<section class="section reveal" aria-labelledby="h-systems">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">05</span>
+      <h2 id="h-systems">Production Systems</h2>
+      <span class="sec-rule"></span>
+      <span class="sec-note">Live, with real users</span>
     </div>
-</div>
 
-    <div class="card">
-      <h3>Event‑based Vision Model</h3>
-      <p class="meta">Development of a self-supervised learning algorithm for 3D prediction of logistic objects using event-based cameras. Work includes dataset creation, LLMs analysis for segmentation processes, NeRF-style 3D modeling, and open-source algorithms to improve annotation efficiency and predictive accuracy.</p>
-<p class="meta"><strong>Key highlights: <span style="color: rgb(0, 170, 0);">+6.3 mAP vs baseline in Object Detection</span></strong> and <span style="color: rgb(0, 170, 0);"><strong>90% annotations space reduction</strong> from the original dataset</span>. </p>
-<p><a href="https://vimeo.com/1088729957" target="_blank" rel="noopener">View project explained video</a></p>
-<div style="text-align: center;"><p class="meta"><img src="/docs/dortmund1.gif" alt="Imagen 1" height="230">
-<img src="/docs/dortmund2.jpg" alt="Imagen 2" height="270">
-<img src="/docs/dortmund3.jpg" alt="Imagen 2" height="180"></p>
+    <div class="grid g-3">
+      <div class="card">
+        <div class="card-head">
+          <h3>Agentic Document Inspector</h3>
+          <span class="pill">In production</span>
+        </div>
+        <p class="card-meta">Sales &amp; Engineering</p>
+        <p class="body-text">Agentic inspection that catches contract-critical requirements and
+          subtle specification changes across large engineering documentation, then propagates
+          updates across every dependent document.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Real Estate AI Platform</h3>
+          <span class="pill">In production</span>
+        </div>
+        <p class="card-meta">Multimodal computer vision</p>
+        <p class="body-text">End-to-end workflow generating portal-ready listings, with room
+          classification, alternate-view generation, virtual staging and location-based
+          pre-valuation behind a one-click interface.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Workforce Management Platform</h3>
+          <span class="pill">In production</span>
+        </div>
+        <p class="card-meta">Cross-platform · Android &amp; iOS</p>
+        <p class="body-text">Time-tracking with facial-detection kiosk check-in, intelligent
+          monitoring of shift and rest-interval breaches, AI report automation, and a digital
+          fire register for emergencies.</p>
+      </div>
     </div>
-</div>
-
-<div class="card">
-      <h3>Airbus · Critical Embedded Systems</h3>
-      <p class="meta">Verification & certification of critical software changes in SMART MRTT Air-Refueling System project.</p>
-<div style="text-align: center;">
-<p class="meta"><img src="/docs/airbus1.jpg" alt="Imagen 1" height="250">
-<img src="/docs/airbus2.jpg" alt="Imagen 2" height="200"></p>
-    </div>
-</div>
-
   </div>
 </section>
 
-</div>
+<!-- ============ 06 · RESEARCH ============ -->
+<section class="section reveal" aria-labelledby="h-research">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">06</span>
+      <h2 id="h-research">Research &amp; Recognition</h2>
+      <span class="sec-rule"></span>
+    </div>
+
+    <div class="grid g-2">
+      <a class="card" href="/publications.html">
+        <div class="card-head">
+          <h3>Granted Patent</h3>
+          <span class="tag tag-accent" translate="no">P202331053</span>
+        </div>
+        <p class="body-text">Communicated system for detecting impacts and the status of an
+          individual — granted to Universidad Politécnica de Madrid, derived from my Bachelor's
+          Thesis on wearable capacitive sensing.</p>
+        <p class="card-links"><span class="link-arrow">View patent and papers <span aria-hidden="true">→</span></span></p>
+      </a>
+
+      <a class="card" href="/publications.html">
+        <div class="card-head">
+          <h3>Event-Based 3D Prediction</h3>
+          <span class="tag tag-accent">ICCV in prep.</span>
+        </div>
+        <p class="body-text">MSc thesis at TU Dortmund (FLW Chair): self-supervised prediction of
+          multiple logistic objects with 3D annotations from event cameras. <strong>+6.3
+          mAP</strong> over baseline, <strong>90%</strong> less annotation storage.</p>
+        <p class="card-links"><span class="link-arrow">Read the research <span aria-hidden="true">→</span></span></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · STACK ============ -->
+<section class="section reveal" aria-labelledby="h-stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-index" aria-hidden="true">07</span>
+      <h2 id="h-stack">Technical Stack</h2>
+      <span class="sec-rule"></span>
+      <span class="sec-note">Full breakdown on the CV page</span>
+    </div>
+
+    <div class="stack-group">
+      <h3>Languages &amp; Engineering</h3>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">C#</span>
+        <span class="tag">Embedded C/C++</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span>
+        <span class="tag">Pydantic</span><span class="tag">Git</span><span class="tag">Docker</span>
+        <span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Microservices</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h3>Agentic AI &amp; LLM</h3>
+      <div class="tags">
+        <span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">CrewAI</span>
+        <span class="tag">Multi-Agent Systems</span><span class="tag">Agent Orchestration</span>
+        <span class="tag">Tool / Function Calling</span><span class="tag">State &amp; Memory</span>
+        <span class="tag">ReAct</span><span class="tag">Human-in-the-Loop</span><span class="tag" translate="no">MCP</span>
+        <span class="tag">OpenAI</span><span class="tag">Anthropic</span><span class="tag">DeepSeek</span>
+        <span class="tag">Open-Source LLMs</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h3>RAG &amp; LLMOps</h3>
+      <div class="tags">
+        <span class="tag">RAG</span><span class="tag">Agentic RAG</span><span class="tag">Embeddings</span>
+        <span class="tag">Chunking</span><span class="tag">Vector Databases</span><span class="tag">Semantic Retrieval</span>
+        <span class="tag">Knowledge Graphs</span><span class="tag">Context Engineering</span>
+        <span class="tag">LLM Evaluation</span><span class="tag">Observability</span><span class="tag">Guardrails</span>
+        <span class="tag">Prompt Engineering</span><span class="tag">Cost &amp; Latency Optimization</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h3>Machine Learning &amp; Computer Vision</h3>
+      <div class="tags">
+        <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">YOLO</span>
+        <span class="tag">Deep Learning</span><span class="tag">Transformers</span><span class="tag">Vision Transformers</span>
+        <span class="tag">Diffusion Models</span><span class="tag">GANs</span><span class="tag">VAEs</span>
+        <span class="tag" translate="no">CLIP</span><span class="tag">NeRF</span>
+        <span class="tag">Self-Supervised Learning</span><span class="tag">Object Detection</span>
+        <span class="tag">Segmentation</span><span class="tag">Event-Based Vision</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h3>Robotics &amp; Safety-Critical</h3>
+      <div class="tags">
+        <span class="tag" translate="no">ROS2</span><span class="tag">Gazebo</span><span class="tag">Aerostack2</span>
+        <span class="tag">SLAM</span><span class="tag">LiDAR</span><span class="tag">Sensor Fusion</span>
+        <span class="tag">Path Planning</span><span class="tag">Kalman &amp; EKF</span>
+        <span class="tag">Obstacle Avoidance</span><span class="tag">UAV Autonomy</span>
+        <span class="tag" translate="no">DAL-A</span><span class="tag">Verification &amp; Certification</span>
+        <span class="tag" translate="no">RTOS</span><span class="tag">FPGA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section reveal">
+  <div class="wrap">
+    <div class="card" style="padding:var(--sp-7)">
+      <p class="eyebrow">Next step</p>
+      <h2 style="margin-top:var(--sp-4);max-width:34rem">Building something where AI has to actually work?</h2>
+      <p class="lead" style="margin-top:var(--sp-4);max-width:38rem">
+        I am always open to conversations about applied AI research, agentic systems and
+        robotics — whether that is a role, a collaboration or an industrial research project.
+      </p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:tsvillaluenga@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/tomas-sanchez-villaluenga-9b2b33232/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="/docs/Tomas_Sanchez_Villaluenga_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
 <footer class="footer">
-  <div class="container">
-    © Tomás Sánchez Villaluenga · Built with GitHub Pages · <a href="https://github.com/tsvillaluenga/tsvillaluenga.github.io" target="_blank" rel="noopener">Source</a>
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-note">© 2026 Tomás Sánchez Villaluenga</p>
+      <p class="footer-note">Madrid, Spain · Open to relocation</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:tsvillaluenga@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/tomas-sanchez-villaluenga-9b2b33232/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/tsvillaluenga" target="_blank" rel="noopener">GitHub</a>
+      <a href="/docs/Tomas_Sanchez_Villaluenga_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+    </div>
   </div>
 </footer>
+
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>
