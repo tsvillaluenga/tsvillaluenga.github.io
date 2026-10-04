@@ -2,7 +2,7 @@
 
 Portfolio for GitHub Pages. Pure HTML, CSS and vanilla JS — no build step.
 
-Live at **https://tsvillaluenga.github.io/**
+Live at **https://tomassanchezvillaluenga.com/**
 
 ## Pages
 | File | Purpose |

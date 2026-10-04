@@ -1,2 +1,5 @@
 # Local tooling config, not part of the published site
 .claude/
+
+# Private planning notes, never published by Pages
+planning/
