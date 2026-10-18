@@ -40,6 +40,16 @@ Edit the HTML and push to `main`; Pages serves the repository root and
 `.nojekyll` disables Jekyll. The `<nav>` block is duplicated per page — update
 every page when adding a section, and move `aria-current="page"`.
 
+## Framing
+GitHub Pages cannot send `X-Frame-Options` or a CSP `frame-ancestors` header,
+so each page guards itself: the inline `<head>` script adds the `framed` class
+when the page runs inside another window, the CSS hides the content, and
+`site.js` tries to leave the frame and shows a link out.
+
+## Licence
+All rights reserved; see `LICENSE`. The repository is public only so that
+Pages can serve it.
+
 ## Updating the CV
 Replace `docs/Tomas_Sanchez_Villaluenga_CV.pdf` and bump the "Last updated"
 line in `cv.html`.

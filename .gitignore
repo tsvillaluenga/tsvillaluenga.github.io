@@ -3,3 +3,14 @@
 
 # Private planning notes, never published by Pages
 planning/
+
+# Personal working files kept in this folder; the repo is public, so they must
+# never be committed by accident
+linkedin_ai_deployed_jobs.md
+*.docx
+*.xlsx
+.env
+.env.*
+
+# Crash dumps from Git Bash
+*.stackdump
