@@ -7,6 +7,25 @@
   "use strict";
 
   var root = document.documentElement;
+
+  /* ---- frame guard ----
+     GitHub Pages cannot send X-Frame-Options or a CSP frame-ancestors header,
+     so the page guards itself: the inline head script marks <html> as
+     "framed", the CSS hides the content, and this tries to leave the frame.
+     Browsers may block that jump without a click, hence the link. */
+  if (root.classList.contains("framed")) {
+    try { window.top.location.replace(window.location.href); } catch (e) {}
+    var note = document.createElement("p");
+    var out = document.createElement("a");
+    note.className = "framed-note";
+    out.href = window.location.href;
+    out.target = "_top";
+    out.textContent = "Open this page on tomassanchezvillaluenga.com";
+    note.appendChild(out);
+    document.body.insertBefore(note, document.body.firstChild);
+    return;
+  }
+
   var btn = document.getElementById("theme-toggle");
   var meta = document.querySelector('meta[name="theme-color"]');
   var BG = { dark: "#0A0E14", light: "#FBFAF8" };
